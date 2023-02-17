@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Marketplace de 8.-A</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#productos">Inicio</a></li>
+				<li><a href="#">Productos</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Marketplace de 8.-A</h1>
+		<p>En este sitio podrás encontrar una variedad de productos.</p>
+        <p style="text-align: center; color: brown; font-size: 30px ">PORFAVOR INGRESA TUS DATOS</p>
+
+        <form id="compras zapatos" class="product-form" data-netlify="true" action="procesar_compra.php" method="POST">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="Direccion">Direccion:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <button type="submit">Enviar</button>
+        </form>
+
+        
+		<section id="productos">
+            <h2>Productos Destacados</h2>
+            <ul>
+                <li>
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="/img/producto1.jpg">
+                        </div>
+                        <div class="product-info">
+                            <h3>Producto 1</h3>
+                            <p class="product-description">Zapatos de vestir.</p>
+                            <form id="compras zapatos" class="product-form" data-netlify="true" action="procesar_compra.php" method="POST">
+
+                                <label for="quantity">Cantidad:</label>
+                                <input type="number" name="quantity" id="quantity" min="1" max="5" value="1">
+                                <label for="price">Precio:</label>
+                                <input type="text" name="price" id="price" value="$10.99" readonly>
+                                <button type="submit">Comprar</button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="/img/producto2.jpg">
+                        </div>
+                        <div class="product-info">
+                            <h3>Producto 2</h3>
+                            <p class="product-description">Silla blanca.</p>
+                            <form id="compras sillas" class="product-form" data-netlify="true" action="procesar_compra.php" method="POST">
+                                <label for="quantity">Cantidad:</label>
+                                <input type="number" name="quantity" id="quantity" min="1" max="5" value="1">
+                                <label for="price">Precio:</label>
+                                <input type="text" name="price" id="price" value="$20.99" readonly>
+                                <button type="submit">Comprar</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Repite el mismo patrón para los demás productos -->
+                </li>
+
+                <li>
+                    <div class="product-item">
+                        <div class="product-image">
+                            <img src="/img/producto3.jpg">
+                        </div>
+                        <div class="product-info">
+                            <h3>Producto 3</h3>
+                            <p class="product-description">Escritorio de madera.</p>
+                            <form id="compras escritorio" class="product-form" data-netlify="true" action="procesar_compra.php" method="POST">
+                                <label for="quantity">Cantidad:</label>
+                                <input type="number" name="quantity" id="quantity" min="1" max="5" value="1">
+                                <label for="price">Precio:</label>
+                                <input type="text" name="price" id="price" value="$31.99" readonly>
+                                <button type="submit">Comprar</button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        
+	</main>
+	<footer>
+		<p>Derechos reservados © Julio Leonel Rubio Ramirez 2023</p>
+	</footer>
+</body>
+</html>
